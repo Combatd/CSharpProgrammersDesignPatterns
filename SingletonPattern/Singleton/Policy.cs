@@ -9,24 +9,26 @@ namespace Singleton
     
     public class Policy
     {
-        private static readonly object _lock = new object();
+        // private static readonly object _lock = new object();
 
-        private static Policy _instance;
+        private static readonly Policy _instance = new Policy();
         public static Policy Instance
         {
             get
             {
-                lock (_lock)
-                {
-                    if (_instance == null) // make sure there is only once instance of Policy
-                    {
-                        return new Policy();
-                    }
-                    else
-                    {
-                        return _instance;
-                    }
-                }
+                //lock (_lock)
+                //{
+                //    if (_instance == null) // make sure there is only once instance of Policy
+                //    {
+                //        return new Policy();
+                //    }
+                //    else
+                //    {
+                //        return _instance;
+                //    }
+                //}
+
+                return _instance;
 
             }
         }
