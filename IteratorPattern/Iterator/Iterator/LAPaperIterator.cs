@@ -8,7 +8,7 @@ namespace Iterator.Iterator
 {
     public class LAPaperIterator : IIterator
     {
-        private string[] _reporters;
+        private string[] _reporters; // notice the string array methods below
         private int _current;
 
         public LAPaperIterator(string[] _reporters)

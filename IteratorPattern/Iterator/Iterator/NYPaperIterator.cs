@@ -8,7 +8,7 @@ namespace Iterator.Iterator
 {
     public class NYPaperIterator : IIterator
     {
-        private List<string> _reporters;
+        private List<string> _reporters; // notice the list methods below
         private int _current;
 
         public NYPaperIterator(List<string> _reporters)
