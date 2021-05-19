@@ -26,3 +26,17 @@ namespace ObserverPattern
         }
     }
 }
+
+/* Observer Pattern
+ * 
+ * Defines a one-to-many dependency between objects so that when one object
+ * changes state, all its dependents are notified and updated automatically.
+ * 
+ * A change in one object causes a change or action in another.
+ * 
+ * Publisher/Subscriber on Windows
+ * 
+ * Event handling uses the observer pattern.
+ * Mouse clicks trigger an event as the publisher.
+ * Object executes an action as the subscriber.
+ */
