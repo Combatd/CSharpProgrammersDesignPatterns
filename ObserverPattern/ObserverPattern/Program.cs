@@ -10,15 +10,19 @@ namespace ObserverPattern
     {
         static void Main(string[] args)
         {
+            // invoke an instance of each ConcreteSubject
             var gClooney = new GClooney("I love my new wife");
             var tSwift = new TSwift("1981 is now my favorite number.");
 
+            // Create an instance of 2 ConcreteObserver
             var firstFan = new Fan();
             var secondFan = new Fan();
 
+            // Add 2 ConcreteObservers to 2 ConcreteSubjects
             gClooney.AddFollower(firstFan);
             tSwift.AddFollower(secondFan);
 
+            // The 2 ConcreteObservers will be notified of a change in state (ICelebrity.Tweet)
             gClooney.Tweet = "My wife didn't force me to tweet.";
             tSwift.Tweet = "I love my new music.";
 
